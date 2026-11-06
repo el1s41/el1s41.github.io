@@ -12,7 +12,7 @@ Indirizzo previsto: https://el1s41.github.io/ (attivo solo dopo la pubblicazione
 
 - `data.js`: progetti e collegamenti.
 - `app.js`: struttura delle pagine.
-- `styles.css` e `warm.css`: stile e layout.
+- `styles.css` e `warm.css`: stili di base; `cacao.css`: tema editoriale Carta & Cacao, layout responsive e palette.
 - `letter.js`: lettera animata e invio diretto del messaggio.
 - `assets`: immagini e CV.
 
