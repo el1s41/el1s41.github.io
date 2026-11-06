@@ -64,19 +64,22 @@
     const controller = new AbortController();
     const requestTimeout = window.setTimeout(() => controller.abort(), 20000);
     try {
-      const response = await window.fetch('https://formsubmit.co/ajax/' + encodeURIComponent(window.PORTFOLIO.email), {
+      const endpoint = window.PORTFOLIO.contactEndpoint || ('https://formsubmit.co/ajax/' + window.PORTFOLIO.email);
+      const isFormspree = /^https:\/\/formspree\.io\/f\/[a-z0-9]+$/i.test(endpoint);
+      const payload = {
+        name, email, message,
+        _replyto: email,
+        _subject: 'Portfolio — messaggio di ' + name,
+        _template: 'table',
+        _captcha: 'false',
+        _honey: honey,
+        _url: window.location.href
+      };
+      const response = await window.fetch(endpoint, {
         method: 'POST',
-        headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+        headers: {'Accept':'application/json'},
         signal: controller.signal,
-        body: JSON.stringify({
-          name, email, message,
-          _replyto: email,
-          _subject: 'Portfolio — messaggio di ' + name,
-          _template: 'table',
-          _captcha: 'false',
-          _honey: honey,
-          _url: window.location.href
-        })
+        body: new URLSearchParams(isFormspree ? {name, email, message, _subject: payload._subject} : payload)
       });
       const result = await response.json();
       const activation = /activat|confirm.{0,50}email|verify.{0,50}email/i.test(String(result.message || ''));
@@ -85,7 +88,7 @@
         unlock();
         return;
       }
-      if (!response.ok || !(result.success === true || result.success === 'true')) throw new Error('submission-rejected');
+      if (!response.ok || (isFormspree ? Boolean(result.errors || result.error) : !(result.success === true || result.success === 'true'))) throw new Error('submission-rejected');
       feedback.textContent = '';
       dialog.classList.add('is-sending');
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -98,7 +101,7 @@
       }, reduced ? 200 : 1450);
     } catch (error) {
       feedback.textContent = error.name === 'AbortError'
-        ? 'Il servizio non ha confermato l’invio in tempo. Il testo è ancora qui; riprova fra poco.'
+        ? 'Invio momentaneamente non disponibile. Il tuo messaggio è rimasto qui.'
         : 'Invio non riuscito. Il testo è ancora qui: controlla la connessione e riprova.';
       unlock();
     } finally {
