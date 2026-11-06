@@ -16,4 +16,4 @@ Indirizzo previsto: https://el1s41.github.io/ (attivo solo dopo la pubblicazione
 - `letter.js`: lettera animata e preparazione della bozza email.
 - `assets`: immagini e CV.
 
-Il modulo apre una bozza nella app di posta e non invia email da un server.
+Il modulo invia nome, email e messaggio a FormSubmit tramite HTTPS e resta sul sito. Al primo utilizzo il destinatario deve confermare l’email di attivazione di FormSubmit. L’animazione viene mostrata solo dopo l’accettazione del servizio; errori e timeout mantengono il testo. La consegna effettiva nella casella va verificata dopo l’attivazione. Non sono presenti credenziali nel codice.
