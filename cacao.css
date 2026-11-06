@@ -1,5 +1,5 @@
 /* Carta & Cacao — editorial portfolio */
-:root{--paper:#f5f0e8;--ink:#352820;--muted:#706258;--line:#d9cec1;--accent:#95684f;--soft:#e9e0d4;--sage:#dce0d3;--motion:cubic-bezier(.22,1,.36,1)}
+:root{--paper:#f5f0e8;--ink:#352820;--muted:#706258;--line:#d9cec1;--accent:#95684f;--soft:#e9e0d4;--sage:#e7d8c7;--motion:cubic-bezier(.22,1,.36,1)}
 body{font-size:18px;background:var(--paper);color:var(--ink)}
 .shell{width:min(1320px,calc(100% - 96px))}
 header.shell{background:var(--paper);z-index:100}
@@ -27,7 +27,7 @@ header.shell{background:var(--paper);z-index:100}
 .work-section .project-card:first-child .card-image{height:500px;background:#e7ded1}
 .work-section .project-card:first-child .card-image.contain img{padding:54px}
 .card-image{height:390px;border-radius:3px;background:#e7ded1}
-.card-image.paper{background:#e7ded1}.card-image.green{background:#dfe3d7}.card-image.dark{background:#352820}
+.card-image.paper{background:#e7ded1}.card-image.green{background:#e6d7c6}.card-image.dark{background:#352820}
 .card-image.contain img{padding:42px}
 .card-meta{margin-top:22px}
 .card-title{font-family:var(--serif);font-size:30px;font-weight:400;letter-spacing:-.035em}
@@ -57,10 +57,10 @@ header.shell{background:var(--paper);z-index:100}
 .skills h2{font-size:42px;margin-bottom:32px;letter-spacing:-.035em}
 .skills-grid>div{border-color:#bdab95;padding-left:22px}
 .skills h3{font-size:17px;color:#352820}.skills p{color:#6a5c4f;font-size:15px}
-.contact-band{padding:64px 0;background:#dedfce;border-top:1px solid #ced0ba}
-.contact-invitation{font-family:var(--serif);font-size:30px;color:#514e3e;letter-spacing:-.02em;margin-bottom:16px}
+.contact-band{padding:64px 0;background:#e7d8c7;border-top:1px solid #cfbaa4}
+.contact-invitation{font-family:var(--serif);font-size:30px;color:#6d523e;letter-spacing:-.02em;margin-bottom:16px}
 .contact-band h2{color:#352820;font-weight:400}
-.round-link{border-radius:4px;background:transparent;border-color:#9d9e84;color:#352820}
+.round-link{border-radius:4px;background:transparent;border-color:#ad8c70;color:#352820}
 .round-link:hover{background:#352820;color:#f5f0e8;border-color:#352820}
 .footer-inner{padding:10px 0;color:#756659;font-size:12px}
 .project-header{padding:48px 0}.project-header h1{font-size:clamp(48px,6.8vw,94px);letter-spacing:-.05em;line-height:1.06}
@@ -94,7 +94,7 @@ body[data-page=contact] .nav{background:#352820}
 .preview-letter span{font-size:23px;color:#77674e}.preview-letter i{background:#ded4bd}
 .envelope-back{inset:32px 0 0;border-radius:3px;background:#bba181}
 .envelope-front{inset:32px 0 0;background:linear-gradient(135deg,#e2cdb0,#c4a985);border-radius:0 0 3px 3px}
-.envelope-seal{top:110px;background:#707b64;color:#fff9ed}
+.envelope-seal{top:110px;background:#856248;color:#fff9ed}
 .letter-station h2{font-size:clamp(30px,3vw,40px);letter-spacing:-.035em;color:#f5f0e8;margin:18px 0 10px}
 .letter-station>p{font-size:16px;color:#c9b9a8;line-height:1.75;margin:0 0 22px}
 .letter-station .compose-open{min-width:240px;background:#f5f0e8;color:#352820;border-color:#f5f0e8;border-radius:4px}
@@ -115,3 +115,34 @@ body[data-page=contact] a:focus-visible,body[data-page=contact] button:focus-vis
 @media(min-width:1001px){.work-section .project-card:first-child .card-meta{margin-top:26px}.work-section .project-card:first-child .card-title{font-size:37px}}
 @media(max-width:1000px){.shell{width:calc(100% - 64px)}.hero{padding:84px 0 72px}.card-image{height:330px}.work-section .project-card:first-child .card-image{height:410px}.about-strip{padding:42px;gap:35px}.about-strip h2{font-size:44px}.skills{padding:34px}.project-copy{gap:36px}.nav .nav-contact{min-width:110px;padding:11px 16px}.topbar{gap:20px}}
 @media(max-width:650px){.shell{width:calc(100% - 40px)}.topbar{height:78px}.wordmark{font-size:16px;letter-spacing:.09em}.nav{top:78px;border-color:var(--line);padding:20px;box-shadow:0 18px 24px #3528200c}.nav .nav-contact{min-height:50px;width:100%;justify-content:space-between}.hero{padding:65px 0 56px;gap:24px}.hero h1{font-size:clamp(44px,10.8vw,68px);letter-spacing:-.045em}.hero-desc{font-size:19px;line-height:1.75}.section-top h2{font-size:30px}.filter{font-size:12px;min-height:44px}.work-section .grid{gap:36px}.work-section .project-card:first-child .card-image,.card-image{height:320px}.work-section .project-card:first-child .card-image.contain img,.card-image.contain img{padding:30px}.card-title{font-size:28px}.card-desc{font-size:15px}.about-strip{padding:30px 24px;margin-bottom:50px;gap:28px;grid-template-columns:1fr}.about-strip h2{font-size:42px}.about-strip p{font-size:18px}.about-header{padding:32px 0 26px}.about-layout{gap:30px;padding-bottom:44px}.about-layout .portrait{width:min(100%,380px);padding:8px}.about-text{padding-top:26px}.about-text>p{font:400 17px/1.9 var(--sans)}.about-text .project-actions{margin-top:30px}.cv-card{padding:18px;min-height:88px}.skills{padding:30px 24px;margin-bottom:44px}.skills h2{font-size:34px}.skills-grid{gap:28px}.contact-band{padding:40px 0}.contact-invitation{font-size:27px}.contact-band h2{font-size:29px;white-space:normal}.round-link{width:48px;height:48px}.project-header h1{font-size:48px}.project-subtitle{font-size:18px}.project-copy{padding:36px 0;gap:22px}.project-copy h2,.gallery-heading h2,.related h2{font-size:31px}.project-copy .body-copy p{font-size:17px}.related-links a{font-size:23px}.contact-page .editorial-title{padding-top:36px}.contact-page h1{font-size:34px;white-space:normal;line-height:1.18}.contact-page .eyebrow{margin-bottom:20px}.contact-layout{padding:16px 0 30px}.letter-station{padding:18px 0 8px}.envelope-illustration{transform:scale(.9);margin-bottom:10px}.letter-station h2{font-size:33px}.letter-station>p{font-size:16px}.contact-copy{margin-top:30px;text-align:left}.contact-layout .contact-copy>p{font-size:16px}.letter-sheet{border-radius:7px}.footer-inner{font-size:12px}}
+
+/* Soft edges, separated project cards and a translucent contact panel. */
+:root{--panel-radius:24px}
+.nav .nav-contact,.pill,.filter,.letter-station .compose-open{border-radius:999px}
+.card-go,.round-link{border-radius:50%}
+.about-strip,.skills,.project-cover,.gallery button,.note{border-radius:var(--panel-radius)}
+.about-layout .portrait{border-radius:28px}.portrait img{border-radius:18px}
+.cv-card{border-radius:20px}.cv-icon{border-radius:10px}
+.letter-sheet{border-radius:24px}.letter-close{border-radius:50%}
+.letter-form input,.letter-form textarea{border-radius:14px}
+.envelope-back,.envelope-front{border-radius:0 0 12px 12px}
+.preview-letter{border-radius:9px 9px 0 0}
+.envelope-seal,.send-envelope>span{background:#856248;color:#fff8ed}
+.contact-band{background:#e7d8c7;border-color:#cfbaa4}
+.contact-copy{max-width:800px;width:100%;padding:30px 36px;margin-top:32px;text-align:left;border:1px solid #f5e7d629;border-radius:var(--panel-radius);background:#fff6e80a;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 12px 40px #160d080a}
+.contact-layout .contact-copy>p{color:#e0d2c3;margin-bottom:16px}
+.contact-layout .contact-copy>p:last-child{margin-bottom:0}
+.project-card{background:#fffbf5;border:1px solid #d9cbbb;border-radius:var(--panel-radius);box-shadow:0 8px 28px #35282006;transition:box-shadow .3s,border-color .3s;overflow:hidden}
+.project-card>a{display:flex;flex-direction:column;height:100%;border-radius:inherit}
+.project-card:hover{border-color:#b79b7f;box-shadow:0 16px 40px #35282010}
+.project-card:focus-within{outline:3px solid #9a7955;outline-offset:5px}
+.project-card>a:focus-visible{outline:none}
+.project-card .card-image{border-radius:0;background:#e7ded1;flex-shrink:0}
+.card-body{padding:26px 30px 30px;border-top:1px solid #ded1c2;flex:1}
+.project-card .card-meta,.work-section .project-card:first-child .card-meta{margin:0 0 14px}
+.project-card .card-title{font-size:30px;line-height:1.25}
+.project-card .card-desc{margin-top:12px;line-height:1.75}
+.work-section .grid{gap:44px 36px}
+.gallery-section .grid{gap:36px}
+.related-links a{padding:22px;border:1px solid #d5c4af;border-radius:18px;background:#eee4d7;gap:20px}
+@media(max-width:650px){:root{--panel-radius:20px}.contact-copy{padding:24px 22px;margin-top:28px}.work-section .grid,.gallery-section .grid{gap:30px}.card-body{padding:22px 24px 26px}.project-card .card-title,.work-section .project-card:first-child .card-title{font-size:28px}.letter-sheet{border-radius:20px}.about-layout .portrait{border-radius:24px}.related-links a{padding:20px}}
