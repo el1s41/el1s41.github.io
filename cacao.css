@@ -193,3 +193,15 @@ body[data-page=vargiu-rebranding] .lightbox img.light-on-dark{background:#352820
 
 .case-components{display:grid;grid-template-columns:1fr 1fr;gap:18px}.case-components .case-figure img{max-height:210px}.case-components .case-figure>button{padding:12px}
 .case-row .case-figure:not(.site-mockup):not(.dark-variant) img{mix-blend-mode:multiply}.case-print-note>img{mix-blend-mode:multiply}
+
+/* Whole document pages, a single shared variant background and leaflet previews. */
+.case-variants .white-variant>button{background:#eee5d9;border:1px solid #dfd0be}
+.case-variants .white-variant img{filter:drop-shadow(0 1px 1px #87715b);mix-blend-mode:normal!important}
+body[data-page=vargiu-rebranding] .lightbox img.white-mark{background:#eee5d9;filter:drop-shadow(0 1px 1px #87715b)}
+.case-book .case-book-page{height:clamp(340px,70svh,760px);display:flex;align-items:center;justify-content:center;overflow:visible}
+.case-book .case-book-page>img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center;border-radius:0}
+.case-book-page .zoom-hint{position:absolute;right:12px;bottom:12px}
+.case-leaflet{display:grid;gap:28px}.case-leaflet .case-figure>button{padding:0;border-radius:14px;background:transparent;overflow:hidden}
+.case-leaflet .case-figure img{max-height:none;mix-blend-mode:normal!important;border-radius:14px;width:100%;height:auto;object-fit:contain}
+.case-leaflet>.pill{justify-self:start}
+@media(max-width:650px){.case-book .case-book-page{height:clamp(340px,65svh,600px)}.case-leaflet{gap:24px}}

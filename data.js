@@ -332,7 +332,7 @@ window.PORTFOLIO={
           "Versione monocromatica nera"
         ],
         [
-          "rebrand-white.svg",
+          "rebrand-white-clean.svg",
           "Versione bianca per fondi scuri"
         ],
         [
@@ -344,44 +344,52 @@ window.PORTFOLIO={
           "Mockup del sito web realizzato in Photoshop"
         ],
         [
-          "rebrand-editorial-1.jpg",
+          "rebrand-editorial-full-1.jpg",
           "Impaginato InDesign — pagina 1 di 10"
         ],
         [
-          "rebrand-editorial-2.jpg",
+          "rebrand-editorial-full-2.jpg",
           "Impaginato InDesign — pagina 2 di 10"
         ],
         [
-          "rebrand-editorial-3.jpg",
+          "rebrand-editorial-full-3.jpg",
           "Impaginato InDesign — pagina 3 di 10"
         ],
         [
-          "rebrand-editorial-4.jpg",
+          "rebrand-editorial-full-4.jpg",
           "Impaginato InDesign — pagina 4 di 10"
         ],
         [
-          "rebrand-editorial-5.jpg",
+          "rebrand-editorial-full-5.jpg",
           "Impaginato InDesign — pagina 5 di 10"
         ],
         [
-          "rebrand-editorial-6.jpg",
+          "rebrand-editorial-full-6.jpg",
           "Impaginato InDesign — pagina 6 di 10"
         ],
         [
-          "rebrand-editorial-7.jpg",
+          "rebrand-editorial-full-7.jpg",
           "Impaginato InDesign — pagina 7 di 10"
         ],
         [
-          "rebrand-editorial-8.jpg",
+          "rebrand-editorial-full-8.jpg",
           "Impaginato InDesign — pagina 8 di 10"
         ],
         [
-          "rebrand-editorial-9.jpg",
+          "rebrand-editorial-full-9.jpg",
           "Impaginato InDesign — pagina 9 di 10"
         ],
         [
-          "rebrand-editorial-10.jpg",
+          "rebrand-editorial-full-10.jpg",
           "Impaginato InDesign — pagina 10 di 10"
+        ],
+        [
+          "rebrand-leaflet-1.jpg",
+          "Pieghevole — lato esterno"
+        ],
+        [
+          "rebrand-leaflet-2.jpg",
+          "Pieghevole — lato interno"
         ]
       ]
     },
