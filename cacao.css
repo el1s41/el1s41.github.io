@@ -146,3 +146,14 @@ body[data-page=contact] a:focus-visible,body[data-page=contact] button:focus-vis
 .gallery-section .grid{gap:36px}
 .related-links a{padding:22px;border:1px solid #d5c4af;border-radius:18px;background:#eee4d7;gap:20px}
 @media(max-width:650px){:root{--panel-radius:20px}.contact-copy{padding:24px 22px;margin-top:28px}.work-section .grid,.gallery-section .grid{gap:30px}.card-body{padding:22px 24px 26px}.project-card .card-title,.work-section .project-card:first-child .card-title{font-size:28px}.letter-sheet{border-radius:20px}.about-layout .portrait{border-radius:24px}.related-links a{padding:20px}}
+
+/* Shared SVG arrows and introduction-first home. */
+.icon{display:inline-block;width:1em;height:1em;vertical-align:-.15em;flex-shrink:0}
+.nav-contact .icon,.pill .icon,.footer-links .icon{font-size:21px}
+.card-go .icon{font-size:25px}.round-link .icon{font-size:32px}
+.back .icon{font-size:20px}.zoom-hint .icon{font-size:20px}
+.light-controls .icon{font-size:25px}.light-controls button{display:grid;place-items:center}
+.footer-links a,.related-links a{display:inline-flex;align-items:center;gap:8px}
+.home-about .skills{margin-bottom:50px}.home-about{padding-top:0}
+.home-about .portrait img{width:100%;height:auto;object-fit:contain}
+@media(max-width:650px){.home-about .skills{margin-bottom:24px}.round-link .icon{font-size:26px}}

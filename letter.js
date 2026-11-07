@@ -7,6 +7,7 @@
   const close = dialog.querySelector('.letter-close');
   const status = document.getElementById('letter-status');
   const feedback = document.getElementById('letter-feedback');
+  const sendIcon = () => window.portfolioIcon ? window.portfolioIcon('up-right') : '<svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg>';
   let sending = false;
   let animationTimer;
 
@@ -15,7 +16,7 @@
     form.removeAttribute('aria-busy');
     submit.disabled = false;
     close.disabled = false;
-    submit.innerHTML = 'Invia <span aria-hidden="true">↗</span>';
+    submit.innerHTML = `Invia <span aria-hidden="true">${sendIcon()}</span>`;
   }
   function resetMotion() {
     clearTimeout(animationTimer);
@@ -95,7 +96,7 @@
       animationTimer = window.setTimeout(() => {
         dialog.close();
         form.reset();
-        trigger.innerHTML = 'Scrivi un altro messaggio <span aria-hidden="true">↗</span>';
+        trigger.innerHTML = `Scrivi un altro messaggio <span aria-hidden="true">${sendIcon()}</span>`;
         status.textContent = 'Messaggio acquisito dal servizio di invio. Grazie per avermi scritto!';
         trigger.focus();
       }, reduced ? 200 : 1450);
